@@ -9,11 +9,11 @@
               </el-form-item>
 
               <el-form-item label="密码">
-                <el-input v-model="form.password"></el-input>
+                <el-input v-model="form.password" show-password></el-input>
               </el-form-item>
 
               <el-form-item>
-                <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
+                <el-button type="primary" @click="onSubmit">登录</el-button>
               </el-form-item>
             </el-form>
           </div>
@@ -34,7 +34,13 @@ export default {
   },
   methods: {
       onSubmit(){
-          console.log('submit!')
+          console.log(this.form)
+          this.$http.post("/api/login",{
+            name:this.form.name,
+            password:this.form.password
+          }).then(res=>{
+            console.log(res)
+          })
       }
   }
 }
