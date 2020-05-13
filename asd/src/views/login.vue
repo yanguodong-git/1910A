@@ -30,14 +30,20 @@ export default {
         name: "",
         password: ""
       }
-    };
+    }
+  },
+  methods: {
+      onSubmit(){
+          console.log('submit!')
+      }
   }
-};
+}
 </script>
 
-<style lang="scss" scoped>
-html,#app,body{
+<style>
+html,#app,body,.login,.home{
     margin: 0;
     padding: 0;
+    height: 100%; 
 }
 </style>
