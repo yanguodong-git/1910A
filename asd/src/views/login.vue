@@ -1,7 +1,7 @@
 <template>
   <div class="login">
       <el-row type="flex" class="row-bg" justify="center">
-        <el-col :span="12">
+        <el-col :span="10">
           <div class="grid-content bg-purple">
             <el-form ref="form" :model="form" label-width="80px">
               <el-form-item label="用户名">

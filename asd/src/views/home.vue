@@ -4,7 +4,7 @@
       <el-header>Header</el-header>
       <el-container>
         <el-aside width="200px">
-          <el-menu>
+          <el-menu class="zuo">
             <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-location"></i>
@@ -67,6 +67,9 @@ export default {};
   background-color: #e9eef3;
   color: #333;
   text-align: center;
-  line-height: 160px;
+  line-height: 129px;
+}
+.zuo{
+  text-align: left;
 }
 </style>
