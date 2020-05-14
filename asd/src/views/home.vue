@@ -1,7 +1,9 @@
 <template>
   <div>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header>
+        header
+      </el-header>
       <el-container>
         <el-aside width="200px">
           <el-menu class="zuo">
@@ -46,7 +48,11 @@
 </template>
 
 <script>
-export default {};
+  export default {
+      computed: {
+        ...mapState(['id','name','token'])
+      }
+  };
 </script>
 
 <style>
